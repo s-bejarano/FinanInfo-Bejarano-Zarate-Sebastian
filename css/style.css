@@ -636,6 +636,7 @@ body {
   width: 1000px;
   /* height: 1999px; */
   margin-left: 10px;
+  font-size: initial;
 }
 
 @media screen and (max-width: 500px) {
