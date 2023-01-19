@@ -5,7 +5,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 92.5%;
     overflow-x: hidden;
 }
 
@@ -182,12 +182,7 @@ nav {
     background: rgba(230, 224, 224, 0.3);
 }
 
-.tarjeta {
-
-    position: relative;
-
-    margin: 130px;
-}
+.tarjeta {position: relative;margin: 130px;margin-top: 180px;}
 
 @media screen and (max-width: 500px) {
 
@@ -343,7 +338,7 @@ z-index: revert;
 .estructura {
     width: 50%;
     height: 70%;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-left: -15%;
     display: flex;
     flex-direction: column;
@@ -389,47 +384,28 @@ z-index: revert;
 }
 
 .btn-cmpr-1 {
-
-display: flex;
-
-flex-direction: column;
-
-align-items: center;
-
-justify-content: center;
-
-margin-left: 10%;
-
-width: 120px;
-
-height: 20px;
-
-margin-top: 10px;
-
-font-size: 10px;
-
-font-family: 'Lato', sans-serif;
-
-letter-spacing: .02rem;
-
-cursor: pointer;
-
-background: transparent;
-
-border: 0.3rem solid currentColor;
-
-padding: 0.3rem 0.4rem;
-
-font-size: 1.8rem;
-
-color: #92b8aa;
-
-position: relative;
-
--webkit-transition: color 0.3s;
-
-transition: color 0.3s;
-}
+    display: flex;
+    flex-direction: 
+    column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    width: 170px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 20px !important;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    background: transparent;
+    border: 0.3rem solid currentColor;
+    padding: 0.3rem 0.4rem;
+    font-size: 1.8rem;
+    color: #92b8aa;
+    position: relative;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+    }
 
 @media screen and (max-width: 500px) {
 
@@ -618,7 +594,7 @@ text-align: center;
 *,
 *::before,
 ::after {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -659,6 +635,7 @@ body {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    width:340px;
     height: auto;
   }
 }
@@ -677,8 +654,7 @@ body {
 .info {
   padding: 1rem;
   background-color: #ccd7dc;
- 
-  
+  /* width: 160px; */
 }
 
 @media screen and (max-width: 500px) {
@@ -695,7 +671,16 @@ body {
 .contacto {
   padding: 1rem;
   background-color: #eaeff1;
+  /* width: 180px; */
 }
+
+@media screen and (max-width: 500px) {
+    .contacto {
+        padding: 1rem;
+        background-color: #eaeff1;
+         width: 180px; 
+      }
+  }
 .contacto h3 {
   margin-bottom: 1rem;
 }
