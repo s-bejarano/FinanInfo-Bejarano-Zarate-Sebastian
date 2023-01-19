@@ -85,7 +85,7 @@ nav {
     position: absolute;
     left: 0;
     top: 0;
-    width: 200px;
+    width: 250px;
     top: 50px;
     height: calc(100vh - 50px);
     background: #404040;
@@ -167,7 +167,7 @@ nav {
 
 .btn-nav {
     color: var(--main-color);
-    font-size: 15px;
+    font-size: 25px;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -282,9 +282,14 @@ z-index: revert;
 .right {
     background-color: #404040;
     width: 90%;
-    height: 71px;
+    height: 210%;
 }
 
+.right-i {
+    background-color: #404040;
+    width: 90%;
+    height: 89px;
+}
 @media screen and (max-width: 500px) {
 
     .right {
