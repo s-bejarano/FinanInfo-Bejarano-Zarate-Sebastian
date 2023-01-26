@@ -57,8 +57,12 @@ header {
   display: flex;
   align-items: flex-end;
   /* margin: 0.5rem 35rem 0;*/
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #404040;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
 }
 
 .carousel {
@@ -76,7 +80,8 @@ header {
   height: 200px;
 }
 
-.carousel-control-next, .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
   background: black !important;
   width: auto !important;
   height: -webkit-min-content;
@@ -87,9 +92,40 @@ header {
   margin-right: -1rem;
 }
 
-.col-iz, p {
+.col-iz,
+p {
   font-size: medium;
   display: grid;
   align-items: center;
   justify-content: center;
+}
+
+/*NUEVA BARRA DE NAVEGACION*/
+.offcanvas {
+  background-color: #404040 !important;
+}
+.offcanvas .offcanvas-body,
+.offcanvas h2 {
+  color: white;
+}
+.offcanvas .offcanvas-body .newnav .navBar,
+.offcanvas h2 .newnav .navBar {
+  list-style: none;
+}
+.offcanvas .offcanvas-body .newnav .navBar a,
+.offcanvas h2 .newnav .navBar a {
+  text-decoration: none;
+  color: white;
+  line-height: 3;
+  padding: 0 10px;
+  transition: 0.4s ease;
+}
+.offcanvas .offcanvas-body .newnav .navBar a:hover,
+.offcanvas h2 .newnav .navBar a:hover {
+  transform: translateX(100%);
+  color: rgb(211, 199, 174);
+}
+
+.btn-close {
+  background-color: white !important;
 }/*# sourceMappingURL=style2.css.map */
