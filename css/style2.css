@@ -128,4 +128,9 @@ p {
 
 .btn-close {
   background-color: white !important;
+}
+
+.card img, .card svg {
+  width: 45%;
+  margin-left: 8rem;
 }/*# sourceMappingURL=style2.css.map */
