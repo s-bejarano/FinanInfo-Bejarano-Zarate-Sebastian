@@ -136,8 +136,29 @@ p {
 }
 
 .card .av {
-  background-color: rgb(223, 22, 22) !important;
+  background-color: #e1001d !important;
+  color: white;
 }
 .card .btn-av {
-  background-color: rgb(34, 50, 146) !important;
+  background-color: #0b5fff !important;
+}
+.card .bog {
+  background-color: rgb(253, 193, 48);
+  color: #404040;
+}
+.card .btn-bog {
+  background-color: #0040A8;
+}
+.card .oc {
+  background-color: #0081FF;
+  color: white;
+}
+.card .btn-oc {
+  background-color: #404040;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style2.css.map */

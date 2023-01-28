@@ -1,6 +1,8 @@
 $color: #404040;
 $colorf: white;
-
+$colorav: #e1001d ;
+$colorbog: rgb(253, 193, 48);
+$coloroc:  #0081FF;
 * {
     margin: 0;
     padding: 0;
@@ -192,15 +194,54 @@ p {
 .card {
     .av {
 
-        background-color: rgb(223, 22, 22) !important;
+        background-color: $colorav !important;
+        color: $colorf;
 
        
     }
 
     .btn-av{
 
-        background-color: rgb(34, 50, 146) !important;
+        background-color: #0b5fff !important;
+    }
+
+    .bog {
+
+        background-color: $colorbog;
+        
+        color: $color;
+
+        
+    }
+
+    .btn-bog{
+
+        background-color: #0040A8;
+
+       
+    }
+
+    .oc{
+
+        background-color: $coloroc;
+        color: $colorf;
+    }
+
+    .btn-oc {
+
+        background-color: #404040;
     }
 
 
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-outline-secondary{
+
+  
 }
