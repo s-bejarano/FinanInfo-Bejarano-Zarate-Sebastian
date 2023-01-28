@@ -133,4 +133,11 @@ p {
 .card img, .card svg {
   width: 45%;
   margin-left: 8rem;
+}
+
+.card .av {
+  background-color: rgb(223, 22, 22) !important;
+}
+.card .btn-av {
+  background-color: rgb(34, 50, 146) !important;
 }/*# sourceMappingURL=style2.css.map */
