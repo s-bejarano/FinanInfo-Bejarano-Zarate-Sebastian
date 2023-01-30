@@ -315,10 +315,9 @@ nav .navBar a a:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #2f2f2f;
 }
 .estructura p {
-  font-size: large;
+  font-size: 20px !important;
   margin-top: -10px;
   margin-left: 40px;
   color: rgb(207, 198, 198);
@@ -336,12 +335,11 @@ nav .navBar a a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2f2f2f;
   }
 }
 @media screen and (max-width: 500px) {
   .estructura p {
-    font-size: small;
+    font-size: 12px !important;
     margin-top: 190px;
     margin-left: 80px;
     width: 150px;
