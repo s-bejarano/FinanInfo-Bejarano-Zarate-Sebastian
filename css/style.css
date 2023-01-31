@@ -17,7 +17,7 @@ html {
 }
 
 main {
-  background-color: #404040;
+  background-color: white;
 }
 
 .main-index {
@@ -633,13 +633,19 @@ body {
 .formulario button,
 .formulario input,
 .formulario textarea {
-  width: 85%;
+  width: 120%;
   padding: 1rem;
   border: 1px solid #ccd7dc;
 }
 
 .formulario textarea {
   resize: none;
+}
+@media screen and (max-width: 500px) {
+  .formulario textarea {
+    padding: 1rem;
+    width: 150px;
+  }
 }
 
 .full {
@@ -678,7 +684,7 @@ body {
   height: 0px;
 }
 
-.circles {
+.circles, .circles2 {
   top: 0;
   left: 0;
   width: 100%;
@@ -688,7 +694,7 @@ body {
   /* display: flex; */
 }
 @media screen and (max-width: 500px) {
-  .circles {
+  .circles, .circles2 {
     top: 0;
     left: 0;
     width: 100%;
@@ -699,28 +705,7 @@ body {
   }
 }
 
-.circles2 {
-  top: 0;
-  left: 10%;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: inherit;
-  /* display: flex; */
-}
-@media screen and (max-width: 500px) {
-  .circles2 {
-    top: 0;
-    left: 10%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: inherit;
-    /* display: flex; */
-  }
-}
-
-.circles li {
+.circles li, .circles2 li {
   position: absolute;
   display: block;
   list-style: none;
@@ -738,13 +723,13 @@ body {
   list-style: none;
   width: 20px;
   height: 20px;
-  background: rgba(97, 151, 231, 0.2);
-  -webkit-animation: animate 10s linear infinite;
-          animation: animate 10s linear infinite;
+  background: rgba(101, 110, 192, 0.2);
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
   bottom: -110px;
 }
 
-.circles li:nth-child(1) {
+.circles li:nth-child(1), .circles2 li:nth-child(1) {
   left: 25%;
   width: 80px;
   height: 80px;
@@ -760,7 +745,7 @@ body {
           animation-delay: 0s;
 }
 
-.circles li:nth-child(2) {
+.circles li:nth-child(2), .circles2 li:nth-child(2) {
   left: 10%;
   width: 20px;
   height: 20px;
@@ -780,7 +765,7 @@ body {
           animation-duration: 12s;
 }
 
-.circles li:nth-child(3) {
+.circles li:nth-child(3), .circles2 li:nth-child(3) {
   left: 70%;
   width: 20px;
   height: 20px;
@@ -796,7 +781,7 @@ body {
           animation-delay: 4s;
 }
 
-.circles li:nth-child(4) {
+.circles li:nth-child(4), .circles2 li:nth-child(4) {
   left: 40%;
   width: 60px;
   height: 60px;
@@ -816,7 +801,7 @@ body {
           animation-duration: 18s;
 }
 
-.circles li:nth-child(5) {
+.circles li:nth-child(5), .circles2 li:nth-child(5) {
   left: 65%;
   width: 20px;
   height: 20px;
@@ -832,7 +817,7 @@ body {
           animation-delay: 0s;
 }
 
-.circles li:nth-child(6) {
+.circles li:nth-child(6), .circles2 li:nth-child(6) {
   left: 75%;
   width: 110px;
   height: 110px;
@@ -848,7 +833,7 @@ body {
           animation-delay: 3s;
 }
 
-.circles li:nth-child(7) {
+.circles li:nth-child(7), .circles2 li:nth-child(7) {
   left: 35%;
   width: 150px;
   height: 150px;
@@ -864,7 +849,7 @@ body {
           animation-delay: 7s;
 }
 
-.circles li:nth-child(8) {
+.circles li:nth-child(8), .circles2 li:nth-child(8) {
   left: 50%;
   width: 25px;
   height: 25px;
@@ -884,7 +869,7 @@ body {
           animation-duration: 45s;
 }
 
-.circles li:nth-child(9) {
+.circles li:nth-child(9), .circles2 li:nth-child(9) {
   left: 20%;
   width: 15px;
   height: 15px;
@@ -904,7 +889,7 @@ body {
           animation-duration: 35s;
 }
 
-.circles li:nth-child(10) {
+.circles li:nth-child(10), .circles2 li:nth-child(10) {
   left: 85%;
   width: 150px;
   height: 150px;
@@ -949,4 +934,187 @@ body {
     border-radius: 50%;
   }
 }
-/*FONDO ANIMADO FIN*//*# sourceMappingURL=style.css.map */
+/*FONDO ANIMADO FIN*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 92.5%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #404040;
+}
+
+.container-nav {
+  background-color: #404040;
+}
+.container-nav .navBar {
+  list-style: none;
+  -moz-column-count: 6;
+       column-count: 6;
+  -moz-column-rule: 1px solid rgb(185, 197, 201);
+       column-rule: 1px solid rgb(185, 197, 201);
+}
+@media screen and (max-width: 575px) {
+  .container-nav .navBar {
+    -moz-column-count: 2;
+         column-count: 2;
+    font-size: x-small;
+  }
+}
+.container-nav .navBar a {
+  text-decoration: none;
+  color: white;
+  line-height: 3;
+  padding: 0 10px;
+  transition: 0.4s ease;
+}
+.container-nav .navBar a:hover {
+  transform: translateX(100%);
+  color: rgb(211, 199, 174);
+}
+
+.btn-primary {
+  --bs-btn-bg: grey !important;
+  border-color: #404040 !important;
+  --bs-btn-hover-bg: rgb(100, 100, 100) !important;
+}
+
+.bi {
+  color: white;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  /* margin: 0.5rem 35rem 0;*/
+  justify-content: space-evenly;
+  background-color: #404040;
+}
+.socials a {
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+.socials p {
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.carousel {
+  color: #404040;
+}
+
+.carousel-inner {
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+  align-content: space-around;
+}
+.carousel-inner .carousel-item {
+  width: 200px;
+  height: 200px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  background: black !important;
+  width: auto !important;
+  height: -webkit-min-content !important;
+  height: -moz-min-content !important;
+  height: min-content !important;
+  margin-top: 5rem !important;
+  margin-left: 2rem !important;
+  margin-right: -4rem !important;
+}
+
+.col-iz,
+p {
+  font-size: medium;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/*NUEVA BARRA DE NAVEGACION*/
+.offcanvas {
+  background-color: #404040 !important;
+}
+.offcanvas .offcanvas-body,
+.offcanvas h2 {
+  color: white;
+}
+.offcanvas .offcanvas-body .newnav .navBar,
+.offcanvas h2 .newnav .navBar {
+  list-style: none;
+  -moz-column-count: 1;
+       column-count: 1;
+  -moz-column-rule: 1px solid rgb(185, 197, 201);
+       column-rule: 1px solid rgb(185, 197, 201);
+  list-style: none;
+}
+.offcanvas .offcanvas-body .newnav .navBar i,
+.offcanvas h2 .newnav .navBar i {
+  padding: 1px 270px;
+}
+.offcanvas .offcanvas-body .newnav .navBar a,
+.offcanvas h2 .newnav .navBar a {
+  margin-top: -44px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  color: white;
+  line-height: 4;
+  padding: 0px 300px;
+  transition: 0.4s ease;
+}
+.offcanvas .offcanvas-body .newnav .navBar a:hover,
+.offcanvas h2 .newnav .navBar a:hover {
+  transform: translateX(10%);
+  color: rgb(211, 199, 174);
+}
+
+.btn-close {
+  background-color: white !important;
+}
+
+.card img, .card svg {
+  width: 45%;
+  margin-left: 8rem;
+  height: auto;
+}
+
+.card .av {
+  background-color: #e1001d !important;
+  color: white;
+}
+.card .btn-av {
+  background-color: #0b5fff !important;
+}
+.card .bog {
+  background-color: rgb(253, 193, 48);
+  color: #404040;
+}
+.card .btn-bog {
+  background-color: #0040A8;
+}
+.card .oc {
+  background-color: #0081FF;
+  color: white;
+}
+.card .btn-oc {
+  background-color: #404040;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */
